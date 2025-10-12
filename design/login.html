@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body class="bg-slate-200 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden">
+        <!-- Header -->
+        <div class="bg-purple-500 text-white py-6 px-6 text-center">
+            <h1 class="text-3xl font-bold">Welcome to JobPortal</h1>
+            <p class="mt-2 text-purple-100">Find your dream job today</p>
+        </div>
+        
+        <!-- Login -->
+        <div class="p-8">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Login</h2>
+            
+            <!-- Email -->
+            <div class="mb-5">
+                <label class="block text-gray-700 text-sm font-medium mb-2" for="email">
+                    Email
+                </label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fa fa-envelope text-gray-400"></i>
+                    </div>
+                    <input 
+                        id="email" 
+                        type="email" 
+                        class="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" 
+                        placeholder="kriti@gmail.com"
+                        value="kriti@gmail.com"
+                    >
+                </div>
+            </div>
+            
+           <!-- passwords -->
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-medium mb-2" for="password">
+                    Password
+                </label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fas fa-lock text-gray-400"></i>
+                    </div>
+                    <input 
+                        id="password" 
+                        type="password" 
+                        class="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" 
+                        placeholder="Enter password"
+                    >
+                    <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                        <button type="button" class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- User types -->
+            <div class="flex mb-6">
+                <div class="flex-1 mr-2">
+                    <input type="radio" id="student" name="userType" class="hidden peer" checked>
+                    <label for="student" class="block text-center py-3 border border-gray-300 rounded-lg cursor-pointer peer-checked:bg-orange-50 peer-checked:border-orange-500 peer-checked:text-orange-600 transition">
+                        <i class="fa fa-user-graduate mr-2"></i>Student
+                    </label>
+                </div>
+                <div class="flex-1 ml-2">
+                    <input type="radio" id="recruiter" name="userType" class="hidden peer">
+                    <label for="recruiter" class="block text-center py-3 border border-gray-300 rounded-lg cursor-pointer peer-checked:bg-orange-50 peer-checked:border-orange-500 peer-checked:text-orange-600 transition">
+                        <i class="fa fa-briefcase mr-2"></i>Recruiter
+                    </label>
+                </div>
+            </div>
+            
+            <!-- Login Button -->
+            <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                Login
+            </button>
+            
+            
+            <div class="mt-6 text-center">
+                <p class="text-gray-600 text-sm">
+                    Don't have an account? 
+                    <a href="#" class="text-purple-600 font-medium hover:underline">Sign up</a>
+                </p>
+            </div>
+            
+            <!-- Success vandaa aauney -->
+            <!-- <div class="mt-6 p-3 bg-green-50 border border-green-200 rounded-lg text-center">
+                <p class="text-green-700 text-sm">
+                    <i class="fas fa-check-circle mr-1"></i>
+                    Account ended successfully.
+                </p> -->
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
