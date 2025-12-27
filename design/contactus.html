@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <!-- Heading -->
+    <h1 class="text-4xl font-bold text-center mb-3">Contact Us</h1>
+    <p class="text-center text-gray-500 mb-10">We’d love to hear from you. Get in touch anytime.</p>
+
+    <!-- Main Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Contact Info -->
+      <div class="bg-white rounded-2xl shadow p-8">
+        <h2 class="text-2xl font-semibold mb-6">Get in Touch</h2>
+
+        <div class="space-y-4">
+          <div>
+            <p class="font-semibold">📍 Address</p>
+            <p class="text-gray-600">Itahari, Sunsari, Nepal</p>
+          </div>
+
+          <div>
+            <p class="font-semibold">📞 Phone</p>
+            <p class="text-gray-600">+977-98XXXXXXXX</p>
+          </div>
+
+          <div>
+            <p class="font-semibold">✉️ Email</p>
+            <p class="text-gray-600">yourname@email.com</p>
+          </div>
+
+          <div>
+            <p class="font-semibold">⏰ Working Hours</p>
+            <p class="text-gray-600">Sunday – Friday: 9:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-2xl shadow p-8">
+        <h2 class="text-2xl font-semibold mb-6">Send a Message</h2>
+
+        <form class="space-y-5">
+          <div>
+            <label class="block font-medium mb-1">Full Name</label>
+            <input type="text" placeholder="Your name"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Email Address</label>
+            <input type="email" placeholder="Your email"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Subject</label>
+            <input type="text" placeholder="Subject"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Message</label>
+            <textarea rows="4" placeholder="Write your message..."
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+          </div>
+
+          <button type="submit"
+            class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 py-6">
+    © 2025 Your Company Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
